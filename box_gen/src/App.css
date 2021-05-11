@@ -1,0 +1,10 @@
+.boxes div{
+  width:100px;
+  height:100px;
+  padding: 10px;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+}
