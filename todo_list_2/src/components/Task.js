@@ -12,9 +12,15 @@ const Task = props => {
         setList([...list]);
     }
 
+    let taskStyle = {};
+
+    if (task.isComplete) {
+        taskStyle.textDecoration="line-through"
+    }
+
     return (
         <div className="container bg-secondary">
-            <h4>{task.name}</h4>
+            <h4 style={taskStyle}>{task.name}</h4>
             <div className="container">
                 <label htmlFor="checkbox">Complete?</label>
                 <input onChange={onChange} type="checkbox" checked={task.isComplete}/>
