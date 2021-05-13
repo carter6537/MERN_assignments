@@ -15,7 +15,7 @@ const Task = props => {
     let taskStyle = {};
 
     if (task.isComplete) {
-        taskStyle.textDecoration="line-through"
+        taskStyle.textDecoration="line-through";
     }
 
     return (
