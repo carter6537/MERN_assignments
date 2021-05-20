@@ -7,7 +7,7 @@ module.exports.findAllProducts = (req, res) => {
 }
 
 module.exports.findAProduct = (req, res) => {
-    Product.find()
+    Product.findOne({_id: req.params.id})
         .then(product => res.json({product}))
         .catch(err => res.send(err))
 }
